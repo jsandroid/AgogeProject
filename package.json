@@ -1,0 +1,24 @@
+{
+  "name": "agogeproject",
+  "version": "1.0.0",
+  "description": "Gatsby draft website for The Agoge Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsandroid/AgogeProject.git"
+  },
+  "author": "Jonathan Sanchez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jsandroid/AgogeProject/issues"
+  },
+  "homepage": "https://github.com/jsandroid/AgogeProject#readme",
+  "dependencies": {
+    "gatsby": "^2.22.12",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
