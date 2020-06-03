@@ -15,17 +15,23 @@ export default function Header() {
             </Link>
           </div>
           <nav>
-            <Link className={headerStyles.navLink}>About</Link>
-            <Link className={headerStyles.navLink}>Values</Link>
-            <Link className={headerStyles.navLink}>Team</Link>
-            <Link className={headerStyles.navLink}>Programs</Link>
-            <ul className={headerStyles.navLink}>News
-              <Link><li>Student Profiles</li></Link>
-            </ul>
-            <ul className={headerStyles.navLink}>Get Involved
-              <Link><li>Mentors</li></Link>
-              <Link><li>Coaching</li></Link>
-              <Link><li>Donate</li></Link>
+            <ul>
+              <li><Link className={headerStyles.navLink}>About</Link></li>
+              <li><Link className={headerStyles.navLink}>Values</Link></li>
+              <li><Link className={headerStyles.navLink}>Team</Link></li>
+              <li><Link className={headerStyles.navLink}>Programs</Link></li>
+              <li><Link className={headerStyles.navLink}>News</Link>
+                <ul>
+                  <li><Link>Student Profiles</Link></li>
+                </ul>
+              </li>
+              <li><Link className={headerStyles.navLink}>Get Involved</Link>
+                <ul>
+                  <li><Link>Mentors</Link></li>
+                  <li><Link>Coaching</Link></li>
+                  <li><Link>Donate</Link></li>
+                </ul>
+              </li>
             </ul>
           </nav>
           <div className={headerStyles.nav_donate}>

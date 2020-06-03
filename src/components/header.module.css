@@ -8,22 +8,55 @@ header a, ul {
   color: white;
   text-decoration: none;
 }
-nav a:hover, nav ul:hover {
+nav a:hover, nav ul li:hover {
   text-decoration: underline;
 }
 
-nav ul:hover li {
-  display: flex;
-  flex-direction: column;
-  position: absoulte;
+nav {
+  font-size: 18px;
 }
-nav, .nav_donate {
+
+nav ul{
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  float: left;
+}
+
+nav ul li {
+  float: left;
+  list-style: none;
+  position: relative;
+}
+nav ul li:hover ul{
+  display: block
+}
+nav ul li a {
+  display: block;
+  padding: 24px 12px;
+}
+
+nav ul li ul {
+  display: none;
+  position: absolute;
+  background-color: var(--secondary-dark-color);
+  top: 81px;
+  padding: 5px;
+  border-radius: 0 0 5px 5px;
+}
+
+nav ul li ul li {
+  color: var(--primary-dark-color);
+  width: 200px;
+}
+
+nav ul li ul li a {
+  padding: 8px 15px;
+}
+.nav_donate {
   display: flex;
   align-items: center;
   font-weight: bold;
-}
-
-.nav_donate {
 }
 
 .logoLink {
@@ -31,19 +64,11 @@ nav, .nav_donate {
   align-items: center;
 }
 
-nav ul{
-  padding: 0;
-  margin: 0;
-  cursor: pointer;
-}
-nav li {
-  display: none;
-  cursor: pointer;
-}
 
 .spacebetween {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .globalHeader {
   padding: 30px 30px;
