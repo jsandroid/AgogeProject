@@ -1,11 +1,15 @@
 :root {
   --primary-dark-color: #811a1e ;
   --secondary-dark-color: #343434;
-  --tertiary-dark-color: black;
+  --tertiary-dark-color: #675600;
+  --quaternary-dark-color: black;
+
   --primary-light-color: #e78185 ;
-  --secondary-light-color: #b8b8b8;
-  --tertiary-light-color: white;
+  --secondary-light-color: #d9d9d9;
+  --tertiary-light-color: #ffef9a;
+  --quaternary-light-color: white;
 }
+
 @font-face {
   font-family: 'Europa';
   font-style: normal;
@@ -24,7 +28,7 @@
   url(../fonts/Europa-Bold.woff2);
 }
 body {
-  background-color: white;
+  background-color: var(--secondary-light-color);
   position: relative;
   min-height: 100vh;
   min-width: 80vw;

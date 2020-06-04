@@ -9,7 +9,7 @@ header a, ul {
   text-decoration: none;
 }
 nav a:hover, nav ul li:hover {
-  text-decoration: underline;
+  color: var(--tertiary-light-color);
 }
 
 nav {
@@ -28,18 +28,18 @@ nav ul li {
   list-style: none;
   position: relative;
 }
-nav ul li:hover ul{
-  display: block
-}
+
 nav ul li a {
   display: block;
   padding: 24px 12px;
 }
 
 nav ul li ul {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
   position: absolute;
   background-color: var(--secondary-dark-color);
+  transition-duration: 400ms;
   top: 81px;
   padding: 5px;
   border-radius: 0 0 5px 5px;
@@ -99,4 +99,14 @@ nav ul li ul li a {
 .navLink {
   align-items: center;
   padding: 0 15px;
+}
+
+.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.show {
+  opacity: 1;
+  visibility: visible;
 }

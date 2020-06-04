@@ -5,7 +5,7 @@ export default function Index() {
     <>
       <Header />
       <main>
-        <h1>Hello Gatsby!</h1>
+        <h1>Hello Agoge Project!</h1>
       </main>
       
     </>
