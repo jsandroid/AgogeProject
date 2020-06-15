@@ -1,6 +1,7 @@
 header {
   background-color: var(--primary-dark-color);
   width: 100%;
+  max-height: 140px;
   margin: 0;
 }
 
@@ -40,7 +41,7 @@ nav ul li ul {
   position: absolute;
   background-color: var(--secondary-dark-color);
   transition-duration: 400ms;
-  top: 81px;
+  border-top: 59px solid var(--primary-dark-color);
   padding: 5px;
   border-radius: 0 0 5px 5px;
 }
@@ -53,6 +54,8 @@ nav ul li ul li {
 nav ul li ul li a {
   padding: 8px 15px;
 }
+
+
 .nav_donate {
   display: flex;
   align-items: center;
@@ -107,6 +110,10 @@ nav ul li ul li a {
 }
 
 .show {
+  opacity: 1;
+  visibility: visible;
+}
+nav ul li:hover ul {
   opacity: 1;
   visibility: visible;
 }
