@@ -3,6 +3,7 @@
   --secondary-dark-color: #343434;
   --tertiary-dark-color: #675600;
   --quaternary-dark-color: black;
+  --quinary-dark-color: #747474;
 
   --primary-light-color: #e78185 ;
   --secondary-light-color: #d9d9d9;
@@ -43,4 +44,5 @@ main {
   margin: 25px auto 0;
   padding: 0 20px 0;
   max-width: 90vw;
+  min-height: 350px;
 }

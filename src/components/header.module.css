@@ -6,7 +6,7 @@ header {
 }
 
 header a, ul {
-  color: white;
+  color: var(--quaternary-light-color);
   text-decoration: none;
 }
 nav a:hover, nav ul li:hover {

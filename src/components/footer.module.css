@@ -1,0 +1,77 @@
+footer {
+  background-color: var(--secondary-dark-color);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: var(--quinary-dark-color);
+  padding-top: 60px;
+}
+
+.Row {
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  justify-content: center;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0px 50px 70px;
+  font-size: 14px;
+  line-height: 23px;
+}
+
+.Section {
+  width: 21.25%;
+  margin-left: 5%;
+  margin-bottom: 20px;
+}
+
+.Section h1 {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--quinary-dark-color);
+}
+
+.Section span {
+  padding-top: 10px;
+  line-height: normal;
+}
+
+.SubsectionTitle {
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 3px;
+}
+
+.SocialMedia {
+}
+
+.SocialMedia svg {
+  height: 25px;
+  width: 25px;
+  padding-right: 15px;
+}
+.Subsection a, .Copywrite a {
+  color: var(--quinary-dark-color);
+  text-decoration: none;
+}
+.Subsection a:hover {
+  color: var(--tertiary-light-color);
+}
+
+.Copywrite {
+  background-color: #1b1b1b;
+  max-width: 100%;
+  font-size: 12px;
+  padding: 15px;
+}
+.CopywriteCenter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 85vw;
+}
+
