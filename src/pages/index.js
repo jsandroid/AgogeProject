@@ -54,17 +54,24 @@ export default function Index() {
           ))}
         </Slider>
         <div className='bkground1'>
-          <div className='content'>
-            <h1>Hello Agoge Project!</h1>
+          <div className='content index center'>
+            <h1>Our Vision</h1>
+            <p>
+              The Agoge Project's vision is for each and every student who comes through our doors to leave with a skill set to not 
+              only become good at whatever they set their minds to, but to cultivate the community around them to be able to do the same.
+            </p>
           </div>
           
         </div>
         <div className='bkground2'>
-          <div className='content'>
-            <h1>Jonathan is here!</h1>
+          <div className='content index center'>
+            <h1>I Choose</h1>
+            <div className='youtubeContainer'>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/Q_gDf-KC1qA" frameborder="0" className='video' allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
           </div>
         </div>
-        <div className='bkground1'>
+        <div className='bkground3'>
           <div className='content'>
             <h1>Hello Agoge Project!</h1>
           </div>

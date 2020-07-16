@@ -9,7 +9,7 @@ export default function Footer() {
       <div className={footerStyles.Row}>
         <div className={footerStyles.Section}>
           <h1>About</h1>
-          <span>The Agoge Project's mission is to use boxing and Mixed Martial Arts as a vehicle to cultivate self empowerment, discipline, academic excellence, and a sense of community in our youth in Baltimore City.</span>
+          <span>The Agoge Project is focued on using Mixed Martial Arts as a vehicle to cultivate self-empowerment, discipline, academic excellence, and a sense of community in our youth.</span>
         </div>
         <div className={footerStyles.Section}>
           <h1>Address</h1>

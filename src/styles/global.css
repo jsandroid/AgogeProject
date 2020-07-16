@@ -1,7 +1,7 @@
 :root {
   --primary-dark-color: #811a1e ;
   --secondary-dark-color: #343434;
-  --tertiary-dark-color: #675600;
+  --tertiary-dark-color: #ce9a00;
   --quaternary-dark-color: black;
   --quinary-dark-color: #747474;
 
@@ -48,20 +48,49 @@ main {
   background-color: inherit;
   margin: 0 auto;
   max-width: 90vw;
-  padding: 0 20px 0;
+  padding: 30px 20px 70px;
   overflow: hidden;
 }
 
+.index h1 {
+  font-size: 50px;
+}
+
+.index p {
+  width: 75%;
+  margin: 0 auto;
+  line-height: 1.625em;
+  font-size: 25px;
+}
 .bkground1 {
   background-color: var(--secondary-light-color);
 }
 
 .bkground2 {
   background-color: var(--quaternary-light-color);
+  color: var(--quinary-dark-color);
+}
+
+.bkground3 {
+  background-color: var(--tertiary-dark-color);
+  color: var(--quaternary-light-color);
 }
 
 .center {
   text-align: center;
+}
+.youtubeContainer {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; 
+}
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* Remove outline for non-keyboard :focus */
