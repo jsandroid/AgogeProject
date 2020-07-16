@@ -28,21 +28,48 @@
   url(../fonts/Europa-Bold.ttf), url(../fonts/Europa-Bold.woff),
   url(../fonts/Europa-Bold.woff2);
 }
-body {
-  background-color: var(--secondary-light-color);
+
+body { 
+  display: block;
   position: relative;
-  min-height: 100vh;
-  min-width: 80vw;
+  min-height: 100vh; 
   font-family: 'Europa', Arial,sans-serif;
   font-size: 16px;
   font-weight: 400;
   margin: 0;
+
 }
 
 main {
-  display: block;
-  margin: 25px auto 0;
-  padding: 0 20px 0;
+  padding-bottom: 417px;
+}
+
+.content {
+  background-color: inherit;
+  margin: 0 auto;
   max-width: 90vw;
-  min-height: 350px;
+  padding: 0 20px 0;
+  overflow: hidden;
+}
+
+.bkground1 {
+  background-color: var(--secondary-light-color);
+}
+
+.bkground2 {
+  background-color: var(--quaternary-light-color);
+}
+
+.center {
+  text-align: center;
+}
+
+/* Remove outline for non-keyboard :focus */
+*:focus:not(.focus-visible) {
+  outline: none;
+}
+
+/* Optional: Customize .focus-visible */
+.focus-visible {
+  outline-color: lightgreen;
 }
