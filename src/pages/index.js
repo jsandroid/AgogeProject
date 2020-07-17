@@ -5,6 +5,9 @@ import Slider from 'react-animated-slider';
 import pic1 from '../images/slider_homepage/pic1.jpg'
 import pic2 from '../images/slider_homepage/pic2.jpg'
 import pic3 from '../images/slider_homepage/pic3.jpg'
+import cardPic1 from '../images/indexPrgmCards/pic1.jpg'
+import cardPic2 from '../images/indexPrgmCards/pic2.jpg'
+import cardPic3 from '../images/indexPrgmCards/pic3.jpg'
 import 'react-animated-slider/build/horizontal.css';
 import '../styles/slider.css'
 
@@ -19,7 +22,7 @@ const homepageSlider = [
   {
 		title: '“So that we may always have something to offer”',
 		description:
-			'We offer Boxing, Ju-Jitsu, Health & Nutrition, and Mentoring programs to build up each of our students ',
+			'We have Boxing, Ju-Jitsu, Health & Nutrition, and Mentoring programs to build up each of our students ',
 		button: 'Programs',
     image: `${pic2}`,
   },
@@ -32,6 +35,23 @@ const homepageSlider = [
 	},
 ] 
 
+const programs = [
+  {
+    text:'Boxing/MMA', 
+    img: `${cardPic1}`,
+    alt:'Two Agoge Project students sparing',
+  },
+  {
+    text:'Health and Nutrition', 
+    img: `${cardPic2}`,
+    alt:'Coach Ore leads the Health and Nutrition programs',
+  },
+  {
+    text:'Mentoring', 
+    img: `${cardPic3}`,
+    alt:'Coach MJ mentors students both on and off the matts',
+  }
+]
 export default function Index() {
   console.log({pic1})
   return(
@@ -67,17 +87,26 @@ export default function Index() {
           <div className='content index center'>
             <h1>I Choose</h1>
             <div className='youtubeContainer'>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/Q_gDf-KC1qA" frameborder="0" className='video' allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/Q_gDf-KC1qA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </div>
         </div>
-        <div className='bkground3'>
-          <div className='content'>
-            <h1>Hello Agoge Project!</h1>
+        <div className='bkground1'>
+          <div className='content index center'>
+            <h1>Our Programs</h1>
+            <div className='pgmCards'>
+              {programs.map((program, index)=> (
+                <div className='pgmCard'>
+                  <div className='pgmImg'><img src={program.img} alt={program.alt}/></div>
+                  <div className='pgmText'>{program.text}</div>
+                </div>
+              ))}
+            </div>
+            <div className='inner'><button>Learn More</button></div>
           </div>
         </div>
         <div className='bkground2'>
-          <div className='content'>
+          <div className='content index center'>
             <h1>Jonathan is here!</h1>
           </div>
         </div>

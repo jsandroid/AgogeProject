@@ -1,3 +1,9 @@
+---
+slug: 'values'
+date: '2020-07-16'
+title: 'The Agoge Project Values'
+author: 'Jonathan Sanchez'
+---
 # Our Values
 
 ## Love

@@ -94,6 +94,7 @@ nav ul li ul li a {
   padding: 10px 25px;
   border: 1px solid var(--secondary-light-color);
   border-radius: 3px;
+  z-index: 1;
 }
 .donateBtn:hover {
   background-color: var(--secondary-light-color);

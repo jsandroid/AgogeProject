@@ -241,6 +241,7 @@
 
 
 .inner button {
+  cursor: pointer;
   -webkit-appearance: none;
   appearance: none;
   -webkit-filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.1));
@@ -262,8 +263,8 @@
 }
 
 .inner button:hover {
-  color: var(--quaternary-dark-color);
-  background: var(--primary-light-color);
+  color: var(--quaternary-light-color);
+  background: var(--secondary-dark-color);
   -webkit-filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
           filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
 }

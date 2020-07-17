@@ -31,8 +31,8 @@ export default function Footer() {
           <h1>Connect</h1>
           <span className={footerStyles.Subsection}>
             <div className={footerStyles.SocialMedia}>
-              <FaFacebookSquare/>
-              <FaInstagramSquare/>
+              <a href='https://www.facebook.com/theagogeproject'><FaFacebookSquare/></a>
+              <a href='https://www.instagram.com/agogeprojectbmore/'><FaInstagramSquare/></a>
               <FaTwitterSquare/>
             </div>
           </span>
