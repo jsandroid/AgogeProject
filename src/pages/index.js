@@ -18,6 +18,7 @@ const homepageSlider = [
 			'Learn about our mission and how The Agoge Project got started.',
 		button: 'About',
     image: `${pic1}`,
+    link: '/about',
   },
   {
 		title: '“So that we may always have something to offer”',
@@ -25,6 +26,7 @@ const homepageSlider = [
 			'We have Boxing, Ju-Jitsu, Health & Nutrition, and Mentoring programs to build up each of our students ',
 		button: 'Programs',
     image: `${pic2}`,
+    link: '/',
   },
   {
 		title: 'Agoge Values',
@@ -32,6 +34,7 @@ const homepageSlider = [
 			'We\'ve outline a number of values we feel are important to share with our students',
 		button: 'Values',
     image: `${pic3}`,
+    link: '/values',
 	},
 ] 
 
@@ -62,13 +65,13 @@ export default function Index() {
           {homepageSlider.map((item, index) => (
             <div
               key={index}
-              className="slider-content"
-              style={{ background: `linear-gradient(rgba(0, 0, 0, 0.6),transparent), url('${item.image}') no-repeat center center` }}
+              className='slider-content'
+              style={{ background: `linear-gradient(rgba(0, 0, 0, 0.7),transparent), url('${item.image}') no-repeat center center` }}
             >
-              <div className="inner">
+              <div className='inner'>
                 <h1>{item.title}</h1>
                 <p>{item.description}</p>
-                <button>{item.button}</button>
+                <button onClick=`location.href=${item.link}`>{item.button}</button>
               </div>
             </div>
           ))}

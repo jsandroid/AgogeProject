@@ -7,8 +7,8 @@ function Navigation() {
   return(
     <nav>
       <ul>
-        <li><Link className={headerStyles.navLink} to='/'>About</Link></li>
-        <li><Link className={headerStyles.navLink} to='/'>Values</Link></li>
+        <li><Link className={headerStyles.navLink} to='/about'>About</Link></li>
+        <li><Link className={headerStyles.navLink} to='/values'>Values</Link></li>
         <li><Link className={headerStyles.navLink} to='/'>Team</Link></li>
         <li><Link className={headerStyles.navLink} to='/'>Programs</Link></li>
         <li>
