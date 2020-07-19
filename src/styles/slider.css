@@ -240,8 +240,9 @@
 }
 
 
-.inner button {
+.inner .roundButton {
   cursor: pointer;
+  text-decoration: none;
   -webkit-appearance: none;
   appearance: none;
   -webkit-filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.1));
@@ -262,7 +263,7 @@
   cursor: cursor;
 }
 
-.inner button:hover {
+.inner .roundButton:hover {
   color: var(--quaternary-light-color);
   background: var(--secondary-dark-color);
   -webkit-filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));

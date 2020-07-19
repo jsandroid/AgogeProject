@@ -9,12 +9,12 @@ function Navigation() {
       <ul>
         <li><Link className={headerStyles.navLink} to='/about'>About</Link></li>
         <li><Link className={headerStyles.navLink} to='/values'>Values</Link></li>
-        <li><Link className={headerStyles.navLink} to='/'>Team</Link></li>
-        <li><Link className={headerStyles.navLink} to='/'>Programs</Link></li>
+        <li><Link className={headerStyles.navLink} to='/team'>Team</Link></li>
+        <li><Link className={headerStyles.navLink} to='/programs'>Programs</Link></li>
         <li>
           <Link className={headerStyles.navLink} to='/'>News</Link>
           <ul>
-            <li><Link to='/'>Student Profiles</Link></li>
+            <li><Link to='/students'>Student Profiles</Link></li>
           </ul>
         </li>
         <li>

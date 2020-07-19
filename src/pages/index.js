@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Slider from 'react-animated-slider';
@@ -26,7 +27,7 @@ const homepageSlider = [
 			'We have Boxing, Ju-Jitsu, Health & Nutrition, and Mentoring programs to build up each of our students ',
 		button: 'Programs',
     image: `${pic2}`,
-    link: '/',
+    link: '/programs',
   },
   {
 		title: 'Agoge Values',
@@ -71,7 +72,7 @@ export default function Index() {
               <div className='inner'>
                 <h1>{item.title}</h1>
                 <p>{item.description}</p>
-                <button onClick=`location.href=${item.link}`>{item.button}</button>
+                <Link to={item.link} className='roundButton'>{item.button}</Link>
               </div>
             </div>
           ))}
@@ -105,7 +106,7 @@ export default function Index() {
                 </div>
               ))}
             </div>
-            <div className='inner'><button>Learn More</button></div>
+            <div className='inner'><Link to='/' className='roundButton'>Learn More</Link></div>
           </div>
         </div>
         <div className='bkground2'>
