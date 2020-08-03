@@ -91,7 +91,7 @@ export default function Index() {
           <div className='content index center'>
             <h1>I Choose</h1>
             <div className='youtubeContainer'>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/Q_gDf-KC1qA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe title="Agoge Promo" width="560" height="315" src="https://www.youtube.com/embed/Q_gDf-KC1qA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </div>
         </div>

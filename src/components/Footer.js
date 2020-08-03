@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import footerStyles from './footer.module.css'
 import { FaFacebookSquare, FaInstagramSquare, FaTwitterSquare } from "react-icons/fa";
 

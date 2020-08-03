@@ -21,14 +21,8 @@ function Navigation() {
             <li><Link to='/students'>Student Profiles</Link></li>
           </ul>
         </li>
-        <li>
-          <Link className={headerStyles.navLink} to='/'>Get Involved</Link>
-          <ul>
-            <li><Link to='/'>Mentoring</Link></li>
-            <li><Link to='/'>Coaching</Link></li>
-            <li><Link to='/'>Donate</Link></li>
-          </ul>
-        </li>
+        <li><Link className={headerStyles.navLink} to='/'>Get Involved</Link></li>
+        <li><Link className={headerStyles.navLink} to='/contact'>Contact Us</Link></li>
       </ul>
     </nav>
   )
@@ -42,7 +36,7 @@ export default function Header() {
           <div id='logo' className={headerStyles.logo}>
             <Link to='/' className={headerStyles.logoLink}>
               <img src={logo} alt='Agoge Project Logo'/>
-              <span>Agoge Project</span>
+              <span>The Agoge Project</span>
             </Link>
           </div>
             <Navigation />

@@ -79,6 +79,7 @@ main {
 .center {
   text-align: center;
 }
+
 .youtubeContainer {
   position: relative;
   width: 100%;
@@ -136,7 +137,7 @@ main {
 }
 
 /* MarkDown CSS */
-.blog-post-container h1 {
+.blog-post-container h1, .defaultH1 {
   padding-bottom: 40px;
   font-size: 45px;
   border-bottom: 2px solid var(--secondary-light-color);
@@ -158,4 +159,51 @@ main {
 
 .blog-post-content h2 {
   font-size: 30px;
+}
+
+/* Contact Page CSS */
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 40px;
+}
+
+.contactForm {
+  width: 500px;
+}
+
+.googleMap {
+  width: 600px;
+}
+
+.contactForm .form-group {
+  flex-direction: column;
+  display: flex;
+  padding-bottom: 20px;
+}
+
+button.btn-primary {
+  width: 100%;
+  background-color: var(--primary-dark-color);
+  color: var(--quaternary-light-color);
+  border: none;
+  font-size: 20px;
+  padding: 15px;
+}
+
+.form-group label {
+  padding-bottom: 10px;
+  font-size: 25px;
+}
+
+.form-group .form-control {
+  font-size: 15px;
+  background-color: var(--secondary-light-color);
+  padding: 15px;
+  border: none;
+}
+
+textarea.form-control {
+  max-width: 470px;
 }
