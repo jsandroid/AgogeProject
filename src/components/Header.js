@@ -7,9 +7,13 @@ function Navigation() {
   return(
     <nav>
       <ul>
-        <li><Link className={headerStyles.navLink} to='/about'>About</Link></li>
-        <li><Link className={headerStyles.navLink} to='/values'>Values</Link></li>
-        <li><Link className={headerStyles.navLink} to='/team'>Team</Link></li>
+        <li><Link className={headerStyles.navLink} to='/about'>About</Link>
+          <ul>
+            <li><Link to='/team'>Our Team</Link></li>
+            <li><Link to='/team'>Our Board</Link></li>
+            <li><Link to='/values'>Values</Link></li>
+          </ul>
+        </li>
         <li><Link className={headerStyles.navLink} to='/programs'>Programs</Link></li>
         <li>
           <Link className={headerStyles.navLink} to='/'>News</Link>
