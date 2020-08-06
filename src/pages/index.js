@@ -57,7 +57,6 @@ const programs = [
   }
 ]
 export default function Index() {
-  console.log({pic1})
   return(
     <>
       <Header />

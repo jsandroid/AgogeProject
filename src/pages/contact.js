@@ -1,23 +1,62 @@
 import React from 'react'
+import { navigate } from 'gatsby'
 import Layout from '../components/Layout'
+import * as emailjs from 'emailjs-com'
 
-function Form(name, email, message, nameHandler, emailHandler, messageHandler, submitHandler) {
+function Form({fieldHandler, onSubmit}) {
   return (
     <div className='contactForm'>
-      <form id="contact-form" onSubmit={submitHandler} method="POST">
-        <div className="form-group">
-          <label htmlFor="name">Name</label>
-          <input type="text" className="form-control" />
+      <form id='contact-form' onSubmit={onSubmit} method='POST'>
+        <div className='form-group'>
+          <label htmlFor='name'>Name</label>
+          <input
+            tabIndex='8'
+            type='text'
+            name='name'
+            placeholder='John Doe'
+            onChange={(e) => fieldHandler('name', e)}
+            required
+            className='form-control'
+          />
         </div>
-        <div className="form-group">
-          <label htmlFor="exampleInputEmail1">Email address</label>
-          <input type="email" className="form-control" aria-describedby="emailHelp" />
+        <div className='form-group'>
+          <label htmlFor='exampleInputEmail1'>Email</label>
+          <input 
+            tabIndex='9'
+            type='email'
+            name='email'
+            placeholder='johndoe@email.com'
+            onChange={(e) => fieldHandler('email', e)}
+            required
+            className='form-control' 
+          />
         </div>
-        <div className="form-group">
-          <label htmlFor="message">Message</label>
-          <textarea className="form-control" rows="5" />
+        <div className='form-group'>
+          <label htmlFor='phone'>Phone</label>
+          <input
+            tabIndex='10'
+            type='tel'
+            name='phone'
+            placeholder='012-345-6789'
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            onChange={(e) => fieldHandler('phone', e)}
+            className='form-control'
+          />
         </div>
-        <button type="submit" className="btn btn-primary">Submit</button>
+        <div className='form-group'>
+          <label htmlFor='message'>Message</label>
+          <textarea
+            tabIndex='11'
+            type='text'
+            name='message'
+            placeholder='Let us know your thoughts!'
+            onChange={(e) => fieldHandler('message', e)}
+            required
+            className='form-control'
+            rows='5'
+          />
+        </div>
+        <button tabIndex='12' type='submit' className='btn btn-primary'>Submit</button>
       </form>
     </div>
   )
@@ -25,65 +64,86 @@ function Form(name, email, message, nameHandler, emailHandler, messageHandler, s
 
 function ContactMap() {
   return (
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3086.571378253131!2d-76.5766524490762!3d39.32063827940703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c8044a4e9d6c7d%3A0xaa4ff5b9ab6d0e54!2s3203%20Belair%20Rd%2C%20Baltimore%2C%20MD%2021213!5e0!3m2!1sen!2sus!4v1596476108843!5m2!1sen!2sus" className='googleMap' frameBorder="0" style={{border : 0 }} allowFullScreen="" aria-hidden="false" ></iframe>
+    <iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3086.571378253131!2d-76.5766524490762!3d39.32063827940703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c8044a4e9d6c7d%3A0xaa4ff5b9ab6d0e54!2s3203%20Belair%20Rd%2C%20Baltimore%2C%20MD%2021213!5e0!3m2!1sen!2sus!4v1596476108843!5m2!1sen!2sus' className='googleMap' frameBorder='0' style={{border : 0 }} allowFullScreen='' aria-hidden='false' ></iframe>
   )
 }
 
-class Contact extends React.Component {
-  constructor(props) {
-    super(props);
+export default class Contact extends React.Component {
+  constructor (props) {
+    super(props)
+
     this.state = {
       name: '',
       email: '',
+      phone: '',
       message: ''
     }
-    this.onNameChange = this.onNameChange.bind(this)
-    this.onEmailChange = this.onEmailChange.bind(this)
-    this.onMessageChange = this.onMessageChange.bind(this)
+
+    this.handleChange = this.handleChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
   }
 
-render() {
- return(
-   <Layout>
-     <div className='content'>
-      <h1 className='defaultH1'>Contact Us</h1>
-      <div className='contact'>
-        <Form
-          name = {this.state.name}
-          email = {this.state.email}
-          message = {this.state.message}
-          nameHandler = {this.onNameChange}
-          emailHandler = {this.onEmailChange}
-          messageHandler = {this.onMessageChange}
-          submitHandler= {this.handleSubmit}
-        />
-        <ContactMap/>
-      </div>
-    </div>
-   </Layout>
- );
-}
+  resetForm() {
+    this.setState({
+      name: '',
+      email: '',
+      phone: '',
+      message: ''
+    })
+  }
 
-  onNameChange(event) {
-    this.setState({name: event.target.value})
-    console.log('updated state in onNameChange')
+  handleChange(param, event) {
     console.log(this.state)
+    this.setState({ [param]: event.target.value })
   }
 
-  onEmailChange(event) {
-    this.setState({email: event.target.value})
-    console.log('updated state in onEmailChange')
+  handleSubmit(event) {
+    event.preventDefault()
+    var { name, email, phone, message } = this.state
+    if(phone.length < 1) {
+      phone = 'Not Provided'
+    }
+    
+    var template_params = {
+      "email": email,
+      "name": name,
+      "phoneNumber": phone,
+      "message": message
+    }
+    
+    var service_id = "agoge";
+    var template_id = "agogecontact";
+    emailjs.send(service_id, template_id, template_params, 'user_RxNcR4Jx0YpUyzzcSXFTR')
+      .then((result) => {
+        console.log(result.text);
+        this.resetForm()
+        navigate(
+          '/submitted',
+          {
+            state: { name }
+          }
+        )
+      }, (error) => {
+        alert(`The following error occured: ${error.text}. Please try again or email us directly at info@agogeproject.org`)
+        console.log(error.text);
+      })
   }
 
-  onMessageChange(event) {
-    this.setState({message: event.target.value})
-    console.log('updated state in onMessageChange')
-    console.log(this.state)
-  }
 
-handleSubmit(event) {
+  render() {
+    return (
+      <Layout>
+        <div className='content'>
+          <h1 className='defaultH1'>Contact Us</h1>
+          <div className='contact'>
+            <Form 
+              fieldHandler= {this.handleChange}
+              onSubmit = {this.handleSubmit}
+            />
+            <ContactMap/>
+          </div>
+        </div>
+      </Layout>
+    )
+  }
 }
-}
-
-export default Contact;

@@ -207,3 +207,56 @@ button.btn-primary {
 textarea.form-control {
   max-width: 470px;
 }
+
+/* Donation CSS */
+.donationBoxes {
+  border: 1px solid var(--secondary-dark-color);
+  max-width: 550px;
+}
+
+.donationBoxes  ul{ 
+  display: grid;
+  grid-template-columns: auto auto;
+  max-width: 500px;
+  list-style: none;
+}
+
+.donateBox {
+  max-width: 300px;
+  padding: 20px;
+  background-color: var(--secondary-dark-color);
+  color: var(--quaternary-light-color);
+  text-align: center;
+  text-decoration: none;
+  margin: 10px;
+
+}
+
+.donateBox:hover{
+  background-color: var(--secondary-light-color);
+  color: var(--quaternary-dark-color);
+}
+
+/* Contact Us Submission page */
+.contactSubmission {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactSubmission svg {
+  width: 80px;
+  height: 80px;
+  color: var(--secondary-dark-color);
+  padding-bottom: 20px;
+}
+
+.contactSubmission h1 {
+  font-size: 40px;
+}
+
+.contactSubmission p {
+  font-size: 20px;
+}
