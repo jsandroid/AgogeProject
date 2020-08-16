@@ -3,12 +3,12 @@ import { Link } from 'gatsby'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Slider from 'react-animated-slider';
-import pic1 from '../images/slider_homepage/pic1.jpg'
-import pic2 from '../images/slider_homepage/pic2.jpg'
-import pic3 from '../images/slider_homepage/pic3.jpg'
-import cardPic1 from '../images/indexPrgmCards/pic1.jpg'
-import cardPic2 from '../images/indexPrgmCards/pic2.jpg'
-import cardPic3 from '../images/indexPrgmCards/pic3.jpg'
+import pic1 from '../images/index/slider_homepage/pic1.jpg'
+import pic2 from '../images/index/slider_homepage/pic2.jpg'
+import pic3 from '../images/index/slider_homepage/pic3.jpg'
+import cardPic1 from '../images/index/indexPrgmCards/pic1.jpg'
+import cardPic2 from '../images/index/indexPrgmCards/pic2.jpg'
+import cardPic3 from '../images/index/indexPrgmCards/pic3.jpg'
 import 'react-animated-slider/build/horizontal.css';
 import '../styles/slider.css'
 
@@ -56,6 +56,44 @@ const programs = [
     alt:'Coach MJ mentors students both on and off the matts',
   }
 ]
+
+function Schedule () {
+  return(
+    <table className='scheduleTable'>
+      <thead>
+        <tr>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+          <th>Thursday</th>
+          <th>Friday</th>
+          <th>Saturday</th>
+          <th>Sunday</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Tutoring By appointment</td>
+          <td><strong>4pm - 5:30pm</strong><br className='scheduleDataBr'/>Brazilian Jiu Jitsu</td>
+          <td>Tutoring By appointment</td>
+          <td><strong>4pm - 5:30pm</strong><br className='scheduleDataBr'/>Brazilian Jiu Jitsu</td>
+          <td>Tutoring By appointment</td>
+          <td><strong>8:30am - 10am</strong><br className='scheduleDataBr'/>Brazilian Jiu Jitsu</td>
+          <td>Closed</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><strong>5pm - 7pm</strong><br className='scheduleDataBr'/>Boxing</td>
+          <td></td>
+          <td><strong>5pm - 7pm</strong><br className='scheduleDataBr'/>Boxing</td>
+          <td></td>
+          <td><strong>9:30am - 11:30am</strong><br className='scheduleDataBr'/>Boxing</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  )
+}
 export default function Index() {
   return(
     <>
@@ -77,7 +115,7 @@ export default function Index() {
           ))}
         </Slider>
         <div className='bkground1'>
-          <div className='content index center'>
+          <div className='content index center visionIndex'>
             <h1>Our Vision</h1>
             <p>
               The Agoge Project's vision is for each and every student who comes through our doors to leave with a skill set to not 
@@ -110,7 +148,8 @@ export default function Index() {
         </div>
         <div className='bkground2'>
           <div className='content index center'>
-            <h1>Jonathan is here!</h1>
+            <h1>Schedule</h1>
+            <Schedule/>
           </div>
         </div>
       </main>

@@ -2,7 +2,7 @@
 slug: 'values'
 date: '2020-07-16'
 title: 'Our Values'
-author: 'Jonathan Sanchez'
+author: 'Michael John'
 ---
 ## Love
 We believe that love is one of the most important values that a person can have and investing in the people around you and in your community is one of the most rewarding and important tasks in your life. To love life, is to love your life, others lives, and to work to make this world a better place for the generations to come. We model this through our actions and interactions with our youths and reinforce it through their interactions amongst their peers.  
@@ -17,7 +17,7 @@ Hard work is one of the most fundamental qualities that you see in every success
 ## Discipline
 We teach that discipline is the ability to do what is necessary to complete tasks at the highest level while contributing to the achievement of your goals regardless of how you personally feel about it. Everyday is a new opportunity to get better at all aspects of our lives, our youths work diligently to set and maintain high standards and accountability in their own lives.  
 
-## Self love/Self Aggrandizement 
+## Self Love/Self Aggrandizement 
 It can be argued that being a child today is harder than it has ever been. As great of a resource that social media is in our world today, it has also contributed to the highest rates of childhood depression, anxiety, and suicide. We believe that self love and self investment is extremely important to our youths development. Through their experiences in our program they are challenged, forced to confront failure, mentored and coached on how to persevere. As they learn that they can overcome obstacles, and get better at things that they once struggled with, that breeds the confidence to try new things and seek new experiences. Confidence is a trait that only people who believe in themselves possess. Our staff works hand in hand with our youth to help cultivate this in ourselves. 
 
 ## Community 
