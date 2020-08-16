@@ -5,3 +5,9 @@ title: 'Student Profiles'
 author: 'Michael John'
 ---
 
+<div class='student'>
+
+## [Curelle M](/students/curelle) 
+
+</div>
+

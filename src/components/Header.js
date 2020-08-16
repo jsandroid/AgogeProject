@@ -10,7 +10,7 @@ function Navigation() {
         <li><Link tabIndex='2' className={headerStyles.navLink} to='/about'>About</Link>
           <ul>
             <li><Link to='/team'>Our Team</Link></li>
-            <li><Link to='/team'>Our Board</Link></li>
+            <li><Link to='/board'>Our Board</Link></li>
             <li><Link to='/values'>Values</Link></li>
           </ul>
         </li>

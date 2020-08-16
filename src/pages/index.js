@@ -143,7 +143,7 @@ export default function Index() {
                 </div>
               ))}
             </div>
-            <div className='inner'><Link to='/' className='roundButton'>Learn More</Link></div>
+            <div className='inner'><Link to='/programs' className='roundButton'>Learn More</Link></div>
           </div>
         </div>
         <div className='bkground2'>
