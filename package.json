@@ -1,10 +1,11 @@
 {
   "name": "agogeproject",
   "version": "1.0.0",
-  "description": "Gatsby draft website for The Agoge Project",
+  "description": "The Agoge Project Website, built with Gatsby",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "firebase deploy --debug --token \"$FIREBASE_TOKEN\""
   },
   "repository": {
     "type": "git",
@@ -40,5 +41,8 @@
     "react-icons": "^3.10.0",
     "react-refresh": "^0.8.2",
     "typescript": ">=2.8.0"
+  },
+  "devDependencies": {
+    "firebase-tools": "^8.7.0"
   }
 }
