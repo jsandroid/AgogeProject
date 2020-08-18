@@ -32,7 +32,6 @@ export default function Footer() {
             <div className={footerStyles.SocialMedia}>
               <a href='https://www.facebook.com/theagogeproject'><FaFacebookSquare/></a>
               <a href='https://www.instagram.com/agogeprojectbmore/'><FaInstagramSquare/></a>
-              <FaTwitterSquare/>
             </div>
           </span>
         </div>

@@ -11,7 +11,7 @@ Students set out on an in-depth study of the art of boxing by starting with begi
 ### Brazilian Jiu Jitsu 
 Three 7 week courses teaching BJJ basics 
 
-### Gardening - MJ, Ore,community partner
+### Gardening
 Seasonal program teaching nutrition and technique to successfully grow flora
 
 ### Web Development 

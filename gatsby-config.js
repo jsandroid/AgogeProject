@@ -6,7 +6,7 @@ module.exports = {
   siteMetadata: {
     title: 'The Agoge Project',
     titleTemplate: '%s',
-    description: 'asd',
+    description: 'The Agoge Project is focused on using Boxing and Martial Arts as a vehicle to cultivate self-empowerment, discipline, academic excellence, and a sense of community in our youth.',
     image: '/images/agoge_white.png',
     url: 'https://www.theagogeproject.org/',
     siteUrl: 'https://www.theagogeproject.org/'
