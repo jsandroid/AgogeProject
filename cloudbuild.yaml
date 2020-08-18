@@ -1,13 +1,13 @@
 steps: 
-  - name: node:11.0.0
+  - name: node:10.15.1 
     entrypoint: yarn 
     args: ["install"] 
-  - name: node:11.0.0
+  - name: node:10.15.1 
     entrypoint: yarn 
     args: ["add", "firebase-tools"]
-  - name: nnode:11.0.0
+  - name: node:10.15.1 
     entrypoint: yarn 
     args: ["build"] 
-  - name: "node:11.0.0" 
+  - name: "node:10.15.1" 
     entrypoint: "./node_modules/.bin/firebase" 
     args: ["deploy", "--project", "$PROJECT_ID", "--token", "$_TOKEN"]
