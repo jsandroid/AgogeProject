@@ -12,7 +12,7 @@ steps:
 - name: node
   entrypoint: npm
   args: ['install']
+  
 # Deploy
-- name: node
-  entrypoint: npm
-  args: ['run', 'deploy']
+- name: gcr.io/agoge-project-website/firebase
+      args: ['deploy', '--project=agoge-project-website', '--only=hosting']
