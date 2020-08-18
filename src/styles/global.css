@@ -44,6 +44,18 @@ main {
   padding-bottom: 417px;
 }
 
+a {
+  text-decoration: none;
+}
+
+main a {
+  color: var(--primary-light-color);
+}
+
+main a:hover {
+  color: var(--quinary-dark-color);
+}
+
 .content {
   background-color: inherit;
   margin: 0 auto;
@@ -107,6 +119,7 @@ main {
 .focus-visible {
   outline-color: lightgreen;
 }
+
 .prgsIndex {
   display: flex;
   flex-direction: column;
@@ -124,6 +137,7 @@ main {
 .pgmImg {
   height: 250px;
 }
+
 .pgmImg img{
   height: 250px;
   width: 250px;
@@ -178,7 +192,7 @@ main {
 }
 
 /* MarkDown CSS */
-.blog-post-container h1, .defaultH1 {
+.blog-post-container h1, .defaultH1, .mostRecent h1 {
   padding-bottom: 40px;
   font-size: 45px;
   border-bottom: 2px solid var(--secondary-light-color);
@@ -231,6 +245,11 @@ button.btn-primary {
   border: none;
   font-size: 20px;
   padding: 15px;
+  cursor: pointer;
+}
+
+button.btn-primary:hover {
+  background-color: var(--secondary-dark-color)
 }
 
 .form-group label {
@@ -302,3 +321,63 @@ textarea.form-control {
   font-size: 20px;
 }
 
+/* News MD style */
+.news-post h2{
+  padding: 20px 0;
+  font-style: italic;
+  opacity: .8;
+}
+
+.news-post-content h2{
+  padding: 20px 0;
+  font-style: normal;
+  opacity: 1;
+}
+.news-post-content {
+  font-size: 18px
+}
+
+.mjSignature p span {
+  margin-left: 0 !important;
+}
+
+/* News page */
+.mostRecent, .newsArchive {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+
+.mostRecent h2, .newsArchive h2 {
+  font-size: 35px;
+}
+
+.mostRecent .title {
+  font-size: 27px;
+  margin: 0;
+  opacity: .8;
+}
+.mostRecent .byline {
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  margin: 0;
+  opacity: .8;
+  padding-bottom: 25px;
+}
+.mostRecent .byline h3 {
+  margin: 0;
+}
+.mostRecent .byline .date {
+  padding-right: 10px;
+}
+
+.mostRecent .date {
+  font-style: italic;
+}
+
+.mostRecent a {
+  margin-top: 30px !important;
+  width: 150px;
+  margin: 0 10px 0 auto;
+}

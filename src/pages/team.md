@@ -3,6 +3,7 @@ slug: 'team'
 date: '2020-07-16'
 title: 'Our Team'
 author: 'Michael John'
+doctype: 'article'
 ---
 
 ### Michael John Jr

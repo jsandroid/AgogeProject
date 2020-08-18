@@ -3,6 +3,7 @@ slug: 'values'
 date: '2020-07-16'
 title: 'Our Values'
 author: 'Michael John'
+doctype: 'article'
 ---
 ## Love
 We believe that love is one of the most important values that a person can have and investing in the people around you and in your community is one of the most rewarding and important tasks in your life. To love life, is to love your life, others lives, and to work to make this world a better place for the generations to come. We model this through our actions and interactions with our youths and reinforce it through their interactions amongst their peers.  

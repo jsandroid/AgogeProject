@@ -3,6 +3,7 @@ slug: 'curelle'
 date: '2020-08-16'
 title: 'Student Profile: Curelle'
 author: 'Curelle M'
+doctype: 'article'
 ---
 
 <div class='profilePic'>

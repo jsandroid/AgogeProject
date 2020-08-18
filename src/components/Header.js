@@ -17,9 +17,9 @@ function Navigation() {
         <li><Link tabIndex='3' className={headerStyles.navLink} to='/programs'>Programs</Link></li>
         <li>
           <Link tabIndex='4' className={headerStyles.navLink} to='/news'>News</Link>
-          <ul>
+          {/*<ul>
             <li><Link to='/students'>Student Profiles</Link></li>
-          </ul>
+          </ul>*/}
         </li>
         <li><Link tabIndex='5' className={headerStyles.navLink} to='/involvement'>Get Involved</Link></li>
         <li><Link tabIndex='6' className={headerStyles.navLink} to='/contact'>Contact Us</Link></li>

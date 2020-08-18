@@ -3,6 +3,7 @@ slug: 'involvement'
 date: '2020-07-16'
 title: 'Getting Involved'
 author: 'Michael John'
+doctype: 'article'
 ---
 
 Does our mission sound like something you'd like to lend your talents and time to help us achieve? We are always on the lookout for responsible adults with a strong desire to improve the lives of those who live in their community. If any (or multiple) of the following roles sound like something you can do, please reach out to us on our [Contact page](/contact) and indicate which role(s) you'd like to participate in. 

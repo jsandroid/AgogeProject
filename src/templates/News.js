@@ -2,6 +2,13 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 
+function getDate( date ) {
+  const month = ['Janurary', 'Feburary', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+  date = date.split('-')
+  var m = date[1] - 1
+  return (`${month[m]} ${date[2]}, ${date[0]}`)
+}
+
 // data prop will be injected by the GraphQL query below.
 export default function Template({ data }) {
   const { markdownRemark } = data // data.markdownRemark holds your post data
@@ -9,10 +16,11 @@ export default function Template({ data }) {
   return (
     <Layout>
       <div className="blog-post-container ">
-        <div className="blog-post content">
+        <div className="news-post content">
           <h1>{frontmatter.title}</h1>
+          <h2>{getDate(frontmatter.date)}</h2>
           <div
-            className="blog-post-content"
+            className="news-post-content"
             dangerouslySetInnerHTML={{ __html: html }}
           />
         </div>
