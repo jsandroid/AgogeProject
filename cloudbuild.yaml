@@ -9,6 +9,10 @@ steps:
   - --keyring=agoge-website-dev
   - --key=cloudbuild-env
 # Insert other build steps here
+- name: node
+  entrypoint: npm
+  args: ['install']
 # Deploy
-- name: 'gcr.io/cloud-builders/npm'
+- name: node
+  entrypoint: npm
   args: ['run', 'deploy']
