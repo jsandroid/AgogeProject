@@ -1,2 +1,4 @@
 # AgogeProject
-Gatsby draft website for The Agoge Project
+Website for The Agoge Project build with Gatsby.
+
+Hosted with Firebase

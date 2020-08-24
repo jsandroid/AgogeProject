@@ -73,11 +73,11 @@ function Schedule () {
       </thead>
       <tbody>
         <tr>
-          <td>Tutoring By appointment</td>
+          <td>Tutoring by Appointment</td>
           <td><strong>4pm - 5:30pm</strong><br className='scheduleDataBr'/>Brazilian Jiu Jitsu</td>
-          <td>Tutoring By appointment</td>
+          <td>Tutoring by Appointment</td>
           <td><strong>4pm - 5:30pm</strong><br className='scheduleDataBr'/>Brazilian Jiu Jitsu</td>
-          <td>Tutoring By appointment</td>
+          <td>Tutoring by Appointment</td>
           <td><strong>8:30am - 10am</strong><br className='scheduleDataBr'/>Brazilian Jiu Jitsu</td>
           <td>Closed</td>
         </tr>
