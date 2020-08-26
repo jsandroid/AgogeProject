@@ -57,7 +57,7 @@ footer {
   color: var(--quinary-dark-color);
   text-decoration: none;
 }
-.Subsection a:hover {
+.Subsection a:hover, .CopywriteCenter a:hover{
   color: var(--tertiary-light-color);
 }
 
