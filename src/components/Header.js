@@ -55,13 +55,13 @@ function Navigation({ burgerClick }) {
         <ul>
           { menuLinks.map((navLink, index) => {
             return !navLink.sublinks.length 
-            ? <li><Link tabIndex={index + 1} className={headerStyles.navLink} to={navLink.link}>{navLink.name}</Link></li>
-            : <li><Link tabIndex={index + 1} className={headerStyles.navLink} to={navLink.link}>{navLink.name}</Link>
+            ? <Link tabIndex={index + 1} className={headerStyles.navLink} to={navLink.link}><li>{navLink.name}</li></Link>
+            : <div><Link tabIndex={index + 1} className={headerStyles.navLink} to={navLink.link}><li>{navLink.name}</li></Link>
               <ul>
               {navLink.sublinks.map((subLink) => {
-                return( <li><Link to={subLink.link}>{subLink.name}</Link></li>)
+                return( <Link to={subLink.link}><li>{subLink.name}</li></Link>)
               })}
-            </ul></li> 
+            </ul></div>
           })
           }
         </ul>
@@ -82,11 +82,11 @@ function MobileNav({ mobileMenuStyle }) {
       <ul>
         { menuLinks.map((navLink, index) => {
           return !navLink.sublinks.length 
-          ? <li><Link tabIndex={index + 1} className={headerStyles.mobileNavLink} to={navLink.link}>{navLink.name}</Link></li>
-          : <div><li><Link tabIndex={index + 1} className={headerStyles.mobileNavLink} to={navLink.link}>{navLink.name}</Link></li>
-            <ul>
+          ? <Link tabIndex={index + 1} className={headerStyles.mobileNavLink} to={navLink.link}><li>{navLink.name}</li></Link>
+          : <div><Link tabIndex={index + 1} className={headerStyles.mobileNavLink} to={navLink.link}><li>{navLink.name}</li></Link>
+            <ul className={headerStyles.subMobileNav}>
             {navLink.sublinks.map((subLink) => {
-              return( <li><Link to={subLink.link}>{subLink.name}</Link></li>)
+              return(<Link to={subLink.link}><li>{subLink.name}</li></Link>)
             })}
           </ul>
           </div>

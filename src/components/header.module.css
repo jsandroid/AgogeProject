@@ -29,39 +29,38 @@ header a, ul {
 }
 
 
-.desktopNav ul li {
+.desktopNav ul a, .desktopNav ul div{
   float: left;
   list-style: none;
   position: relative;
 }
 
-.desktopNav ul li a {
+.desktopNav ul div a, .desktopNav ul a {
   display: block;
 }
 
-.desktopNav ul li ul {
+.desktopNav ul div ul {
   opacity: 0;
   visibility: hidden;
   position: absolute;
   background-color: var(--secondary-dark-color);
   transition-duration: 400ms;
-  border-top: 59px solid var(--primary-dark-color);
-  padding: 5px;
+  border-top: 58px solid var(--primary-dark-color);
+  margin-top: 22px;
   border-radius: 0 0 5px 5px;
 }
 
-.desktopNav ul li:hover ul {
+.desktopNav ul div:hover ul {
   opacity: 1;
   visibility: visible;
-  z-index: 1;
+
 }
 
-.desktopNav ul li ul li {
-  color: var(--primary-dark-color);
+.desktopNav ul div ul a li {
   width: 200px;
 }
 
-.desktopNav ul li ul li a {
+.desktopNav ul div ul a li {
   padding: 8px 15px;
 }
 
@@ -142,9 +141,10 @@ header a, ul {
 .mobileNav {
   flex-direction: column;
   background-color: var(--primary-dark-color);
+  font-size: 20px;
 }
 
-.mobileNav ul, .mobileNav ul li ul {
+.mobileNav ul, .mobileNav ul div ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -168,7 +168,7 @@ header a, ul {
  
 }
 
-.mobileNav ul li:hover a, .mobileNav ul li:active a {
+.mobileNav ul a:hover, .mobileNav ul a:active , .mobileNav ul div ul a:hover, .mobileNav ul div ul a:active {
   color: var(--quaternary-dark-color);
 }
 
@@ -198,7 +198,7 @@ header a, ul {
   }
   header {
     min-height: 140px;
-    max-height: 540px;
+    max-height: 580px;
   }
 }
 

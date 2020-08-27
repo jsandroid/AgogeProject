@@ -53,7 +53,6 @@ function Form({fieldHandler, onSubmit}) {
             onChange={(e) => fieldHandler('message', e)}
             required
             className='form-control'
-            rows='5'
           />
         </div>
         <button tabIndex='12' type='submit' className='btn btn-primary'>Submit</button>

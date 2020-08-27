@@ -45,8 +45,6 @@ footer {
   padding-bottom: 3px;
 }
 
-.SocialMedia {
-}
 
 .SocialMedia svg {
   height: 25px;
@@ -64,16 +62,16 @@ footer {
 .Copywrite {
   background-color: #1b1b1b;
   font-size: 12px;
-  padding: 15px;
   position: absolute;
   bottom: 0;
-  width: 98%;
+  width: 100%;
 }
 .CopywriteCenter {
   display: flex;
+  padding: 15px 30px;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
 }
+
 
