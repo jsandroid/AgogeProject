@@ -45,7 +45,7 @@ header a, ul {
   position: absolute;
   background-color: var(--secondary-dark-color);
   transition-duration: 400ms;
-  border-top: 58px solid var(--primary-dark-color);
+  border-top: 59px solid var(--primary-dark-color);
   margin-top: 22px;
   border-radius: 0 0 5px 5px;
 }
@@ -53,7 +53,7 @@ header a, ul {
 .desktopNav ul div:hover ul {
   opacity: 1;
   visibility: visible;
-
+  z-index: 1;
 }
 
 .desktopNav ul div ul a li {

@@ -35,7 +35,8 @@ export default function Footer() {
             </div>
           </span>
         </div>
-        <div className={footerStyles.Copywrite}>
+      </div>
+      <div className={footerStyles.Copywrite}>
         <div className={footerStyles.CopywriteCenter}>
           <div>
             <p>&copy; {new Date().getFullYear()} Copyright The Agoge Project</p>
@@ -45,9 +46,6 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      </div>
-      
-
     </footer>
   )
 }

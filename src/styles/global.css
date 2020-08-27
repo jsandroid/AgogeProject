@@ -237,16 +237,6 @@ main a:hover {
   padding-top: 0;
 }
 
-@media only screen and (max-width: 1357px) {
-  .contact {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .googleMap {
-    padding-top: 40px;
-  }
-}
 .contactForm .form-group {
   flex-direction: column;
   display: flex;
@@ -279,9 +269,6 @@ button.btn-primary:hover {
   border: none;
 }
 
-textarea.form-control {
-  max-width: 470px;
-}
 
 /* Donation CSS */
 .donationBoxes {
@@ -395,4 +382,101 @@ textarea.form-control {
   margin-top: 30px !important;
   width: 150px;
   margin: 0 10px 0 auto;
+}
+
+@media only screen and (max-width: 1357px) {
+  .contact {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contactForm {
+    width: 80%;
+  }
+
+  .googleMap {
+    padding-top: 50px;
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  main {
+    padding-bottom: 490px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  main {
+    padding-bottom: 700px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+    
+  .scheduleTable {
+    display: flex;
+    width: 494px;
+    border-collapse: collapse;
+  }
+
+  tr {
+    display: flex;
+    flex-direction: column;
+
+  }
+  th, td {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  thead, tbody {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .scheduleTable thead tr th {
+    height: 80px;
+    padding-bottom: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .scheduleTable tbody tr td {
+   border-left: none;
+   border-right: none;
+   border-bottom: 1px solid var(--secondary-dark-color);
+  }
+
+  .scheduleTable tbody tr td:nth-child(7) {
+    border-bottom: none;
+  }
+
+  .scheduleTable tbody {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .scheduleTable {
+    width: 282px;
+    font-size: 10px;
+  }
+
+  tr, td {
+    width: 90px;
+  }
+
+  .scheduleTable thead tr th  {
+    width: 90px;
+  }
+  .scheduleTable tbody tr td {
+    padding: 15px 5px;
+    width: 90px;
+  }
 }
