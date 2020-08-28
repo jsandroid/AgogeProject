@@ -136,6 +136,9 @@ main a:hover {
   padding-bottom: 50px;
 }
 
+.pgmCard {
+  padding: 0;
+}
 .pgmImg {
   height: 250px;
 }
@@ -404,11 +407,23 @@ button.btn-primary:hover {
   main {
     padding-bottom: 490px;
   }
+
+  .pgmCards {
+    flex-direction: column;
+  }
+
+  .pgmCard {
+    padding: 15px 0;
+  }
 }
 
 @media only screen and (max-width: 500px) {
   main {
-    padding-bottom: 700px;
+    padding-bottom: 725px;
+  }
+
+  .visionIndex p{
+    font-size: 25px;
   }
 }
 
@@ -478,5 +493,13 @@ button.btn-primary:hover {
   .scheduleTable tbody tr td {
     padding: 15px 5px;
     width: 90px;
+  }
+
+  .pgmImg {
+    display: none;
+  }
+
+  .pgmText {
+    border-radius: 10px;
   }
 }
