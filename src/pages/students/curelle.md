@@ -4,6 +4,7 @@ date: '2020-08-16'
 title: 'Student Profile: Curelle'
 author: 'Curelle M'
 doctype: 'article'
+description: 'Curella opens up on how The Agoge Project fits into her life'
 ---
 
 <div class='profilePic'>

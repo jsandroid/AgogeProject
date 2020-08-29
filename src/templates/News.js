@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/Layout"
+import SEO from "../components/SEO"
 
 function getDate( date ) {
   const month = ['Janurary', 'Feburary', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
@@ -14,7 +15,7 @@ export default function Template({ data }) {
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
   return (
-    <Layout>
+    <Layout title={frontmatter.title} description={frontmatter.description}>      
       <div className="blog-post-container ">
         <div className="news-post content">
           <h1>{frontmatter.title}</h1>
@@ -38,6 +39,7 @@ export const pageQuery = graphql`
         slug
         title
         author
+        description
       }
     }
   }

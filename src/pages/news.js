@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
 import Layout from "../components/Layout"
+import SEO from '../components/SEO';
 
 function getDate( date ) {
   const month = ['Janurary', 'Feburary', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
@@ -59,7 +60,8 @@ export default function News({ data }) {
   var mostRecent = data.allMarkdownRemark.edges[0]
 
   return (
-    <Layout>
+    <Layout title = 'The Agoge Project News Page'
+        description = 'Learn the latest about The Agoge Project here'>
       <div className='content'>
         <MostRecent newsArticle= {mostRecent} />
         <NewsArchive news={data.allMarkdownRemark.edges.slice(1)} />

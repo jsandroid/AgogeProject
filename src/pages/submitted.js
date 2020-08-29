@@ -7,7 +7,8 @@ export default function Submitted({ location }) {
   var name = ''
   if(typeof window !== 'undefined' && location.state !== null) name = location.state.name.trim()
   return(
-    <Layout>
+    <Layout title='Submitted Contact Us Form'
+    description='Thank you for reach out to The Agoge Project'>
       <div className='content'>
         <div className='contactSubmission'>
           <FaEnvelopeOpenText />

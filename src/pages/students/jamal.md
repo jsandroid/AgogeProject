@@ -4,6 +4,7 @@ date: '2020-08-16'
 title: 'Student Profile: Jamal'
 author: 'Jamal A'
 doctype: 'article'
+description: 'Jamal opens up on how The Agoge Project fits into his life'
 ---
 
 <div class='profilePic'>

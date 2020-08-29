@@ -11,6 +11,7 @@ import cardPic2 from '../images/index/indexPrgmCards/pic2.jpg'
 import cardPic3 from '../images/index/indexPrgmCards/pic3.jpg'
 import 'react-animated-slider/build/horizontal.css';
 import '../styles/slider.css'
+import SEO from '../components/SEO';
 
 const homepageSlider = [
 	{
@@ -97,6 +98,9 @@ function Schedule () {
 export default function Index() {
   return(
     <>
+      <SEO
+        title = 'The Agoge Project Homepage'
+      />
       <Header />
       <main>
         <Slider autoplay={3000} className='slider-wrapper'>

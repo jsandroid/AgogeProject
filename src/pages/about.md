@@ -4,6 +4,7 @@ date: '2020-07-16'
 title: 'About Us'
 author: 'Michael John'
 doctype: 'article'
+description: 'Learn about who we are and where we are headed'
 ---
 
 ## Our Challenge

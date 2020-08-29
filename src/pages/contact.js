@@ -131,7 +131,8 @@ export default class Contact extends React.Component {
 
   render() {
     return (
-      <Layout>
+      <Layout title='Contact Us'
+      description='Please feel free to reach out to The Agoge Project'>
         <div className='content'>
           <h1 className='defaultH1'>Contact Us</h1>
           <div className='contact'>

@@ -4,6 +4,7 @@ date: '2020-07-16'
 title: 'Our Programs'
 author: 'Michael John'
 doctype: 'article'
+description: 'We offer a number of programs to enrich the lives of our students'
 ---
 
 ### Boxing

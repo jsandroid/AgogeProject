@@ -4,6 +4,7 @@ date: '2020-07-16'
 title: 'Our Team'
 author: 'Michael John'
 doctype: 'article'
+description: 'Come meet our team'
 ---
 
 ### Michael John Jr

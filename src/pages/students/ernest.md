@@ -4,6 +4,7 @@ date: '2020-08-16'
 title: 'Student Profile: Enerest'
 author: 'Enerest F'
 doctype: 'article'
+description: 'Enerest opens up on how The Agoge Project fits into his life'
 ---
 
 <div class='profilePic'>
