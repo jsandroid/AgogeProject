@@ -387,6 +387,25 @@ button.btn-primary:hover {
   margin: 0 10px 0 auto;
 }
 
+/* Error Page */
+.error {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.error svg {
+  height: 80px;
+  width: 80px;
+  color: var(--tertiary-dark-color);
+}
+
+.error p {
+  padding-top: 40px;
+}
+
 @media only screen and (max-width: 1357px) {
   .contact {
     flex-direction: column;
