@@ -10,9 +10,6 @@ doctype: 'article'
 ### Michael John Jr
 Founder/President 
 
-### Lori McClaughlin 
-Secretary/Treasurer 
-
 ### Nicholas Voncanon 
 Director - Communications 
 
@@ -21,3 +18,12 @@ Director - Education
 
 ### OreOfe Iluyomade 
 Director - Strength and Condition 
+
+### Dennis Kelley
+Secretary/Treasurer and Director - Jiu Jitsu 
+
+### James Chiles
+Director - Boxing
+
+### Jonathan Sanchez
+Director - Information Technology (IT)
