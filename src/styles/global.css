@@ -447,10 +447,18 @@ button.btn-primary:hover {
 }
 
 @media only screen and (max-width: 750px) {
-    
+  #schedule_container {
+    overflow-x: auto;
+  }
+  
+  div .scheduleTable {
+    overflow-x: auto;
+  }
+
   .scheduleTable {
     display: flex;
-    width: 494px;
+    width: 625px;
+    font-size: 11px;
     border-collapse: collapse;
   }
 
@@ -496,9 +504,10 @@ button.btn-primary:hover {
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 650px) {
+  
   .scheduleTable {
-    width: 282px;
+    width: 554px;
     font-size: 10px;
   }
 

@@ -189,7 +189,7 @@ export default function Index() {
           </div>
         </div>
         <div className='bkground2'>
-          <div className='content index center'>
+          <div className='content index center' id='schedule_container'>
             <h1>Schedule</h1>
             <Schedule/>
           </div>

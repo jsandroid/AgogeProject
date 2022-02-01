@@ -272,15 +272,11 @@
           filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
 }
 
-@media (max-height: 500px) {
-  .slider-wrapper, .slide {
-    height: calc(100vh - 50vh);
-  }    
-}
+
 
 @media (max-width: 640px) {
   .slider-wrapper, .slide {
-    height: calc(80vh - 40vh);
+    height: 500px;
   }    
 }
 
