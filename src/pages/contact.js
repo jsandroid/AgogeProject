@@ -37,7 +37,7 @@ function Form({fieldHandler, onSubmit}) {
             tabIndex='10'
             type='tel'
             name='phone'
-            placeholder='012-345-6789'
+            placeholder='443-760-5437'
             pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
             onChange={(e) => fieldHandler('phone', e)}
             className='form-control'

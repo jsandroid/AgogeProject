@@ -74,21 +74,59 @@ function Schedule () {
       </thead>
       <tbody>
         <tr>
-          <td>Tutoring by Appointment</td>
-          <td><strong>4pm - 5:30pm</strong><br className='scheduleDataBr'/>Brazilian Jiu Jitsu</td>
-          <td>Tutoring by Appointment</td>
-          <td><strong>4pm - 5:30pm</strong><br className='scheduleDataBr'/>Brazilian Jiu Jitsu</td>
-          <td>Tutoring by Appointment</td>
-          <td><strong>8:30am - 10am</strong><br className='scheduleDataBr'/>Brazilian Jiu Jitsu</td>
-          <td>Closed</td>
+          <td><strong>4pm - 5pm</strong><br className='scheduleDataBr'/>Academic Hour</td>
+          <td><strong>4pm - 5pm</strong><br className='scheduleDataBr'/>Academic Hour</td>
+          <td><strong>4pm - 5pm</strong><br className='scheduleDataBr'/>Academic Hour</td>
+          <td><strong>4pm - 5pm</strong><br className='scheduleDataBr'/>Academic Hour</td>
+          <td>No Student Programming</td>
+          <td><strong>8am - 12pm</strong><br className='scheduleDataBr'/>Open Gym, Mentor Meetings</td>
+          <td>No Student Programming</td>
         </tr>
         <tr>
+          <td><strong>5pm - 6pm</strong><br className='scheduleDataBr'/>BJJ -  Kids</td>
+          <td>
+            <strong>Coach Dennis</strong><br className='scheduleDataBr'/>
+            <strong>5pm - 6pm</strong><br className='scheduleDataBr'/>BJJ -  Kids
+          </td>
+          <td>
+            <strong>Coach Dennis</strong><br className='scheduleDataBr'/>
+            <strong>5pm - 6pm</strong><br className='scheduleDataBr'/>BJJ -  Kids
+          </td>
+          <td><strong>5pm - 6pm</strong><br className='scheduleDataBr'/>BJJ -  Kids</td>
           <td></td>
-          <td><strong>5pm - 7pm</strong><br className='scheduleDataBr'/>Boxing</td>
+          <td>
+            <strong>Coach Dennis</strong><br className='scheduleDataBr'/>
+            BJJ<br className='scheduleDataBr'/>
+            <strong>Coach MJ</strong><br className='scheduleDataBr'/>
+            Boxing
+          </td>
           <td></td>
-          <td><strong>5pm - 7pm</strong><br className='scheduleDataBr'/>Boxing</td>
+        </tr>
+        <tr>
+          <td><strong>6pm - 7pm</strong><br className='scheduleDataBr'/>BJJ -  Mixed</td>
+          <td><strong>6pm - 7pm</strong><br className='scheduleDataBr'/>BJJ -  Mixed</td>
+          <td><strong>6pm - 7pm</strong><br className='scheduleDataBr'/>BJJ -  Mixed</td>
+          <td><strong>6pm - 7pm</strong><br className='scheduleDataBr'/>BJJ -  Mixed</td>
           <td></td>
-          <td><strong>9:30am - 11:30am</strong><br className='scheduleDataBr'/>Boxing</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><strong>6pm - 7pm</strong><br className='scheduleDataBr'/>Boxing -  Kids</td>
+          <td><strong>6pm - 7pm</strong><br className='scheduleDataBr'/>Boxing -  Kids</td>
+          <td><strong>6pm - 7pm</strong><br className='scheduleDataBr'/>Boxing -  Kids</td>
+          <td><strong>6pm - 7pm</strong><br className='scheduleDataBr'/>Boxing -  Kids</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><strong>7pm - 8:30pm</strong><br className='scheduleDataBr'/>Boxing Mixed/Comp Practice</td>
+          <td><strong>7pm - 8:30pm</strong><br className='scheduleDataBr'/>Boxing Mixed/Comp Practice</td>
+          <td><strong>7pm - 8:30pm</strong><br className='scheduleDataBr'/>Boxing Mixed/Comp Practice</td>
+          <td><strong>7pm - 8:30pm</strong><br className='scheduleDataBr'/>Boxing Mixed/Comp Practice</td>
+          <td></td>
+          <td></td>
           <td></td>
         </tr>
       </tbody>
