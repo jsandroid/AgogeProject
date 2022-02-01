@@ -19,7 +19,7 @@ Board Member/Mentor
 ### Dennis Kelley Jr
 Brazilian Jiu jitsu Coach and Mentor 
 
-## James Chiles 
+### James Chiles 
 Director of Boxing
 
 ### Jonathan Sanchez
