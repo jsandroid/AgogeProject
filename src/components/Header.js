@@ -78,6 +78,7 @@ function Navigation({ burgerClick }) {
 
 function MobileNav({ mobileMenuStyle }) {
   return(
+    <React.Fragment>
     <nav className={`${mobileMenuStyle} ${headerStyles.mobileNav}`}>
       <ul>
         { menuLinks.map((navLink, index) => {
@@ -94,6 +95,10 @@ function MobileNav({ mobileMenuStyle }) {
         }
       </ul>
     </nav>
+    <div className={headerStyles.nav_donate}>
+      <a tabIndex='7' className={headerStyles.donateBtn} href='https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KPCSJHZA6URES&source=url'>Donate</a>
+    </div>
+  </React.Fragment>
   )
 }
 
