@@ -7,20 +7,54 @@ doctype: 'article'
 description: 'Come meet our team'
 ---
 
+## Board of Directors
+
 ### Michael John Jr
-Founder and Head Coach
+President/Director
 
 ### OreOfe Iluyomade 
-Strength and Conditioning Coach/Mentor
+Director of S&C Assistant Site Director 
 
-### Nicholas Voncanon 
-Board Member/Mentor 
-
-### Dennis Kelley Jr
-Brazilian Jiu jitsu Coach and Mentor 
-
-### James Chiles 
+### James Chiles
 Director of Boxing
 
-### Jonathan Sanchez
-Web Designer/Developer and Coach/Mentor
+### Dennis Kelley Jr
+Director of Jiu Jitsu 
+
+### Shana Bainbridge 
+Director of Education
+
+### Nicholas Voncanon 
+Director of Social Media Communication
+
+## Board of Governors
+
+### Manuel Seda
+Governor - Spanish Instruction 
+
+### Debbie Seda 
+Governor - Spanish Instruction 
+
+### James Turner 
+Governor - Site Team and Event Support
+
+### Arlen Doles
+Governor - Site Team and Event Support
+
+### David “Chap” Loveless
+Governor - Community networking and outreach
+
+### Melissa Hults 
+Governor - Community networking and outreach 
+
+### Craig Marchanti 
+Governor - Agoge Parent Organization (APO)
+
+### Ashley Marchanti 
+Governor - Agoge Parent Organization (APO)
+
+### Triana 
+Governor - Agoge Parent Organization (APO)
+
+### Corey Smith 
+Governor - Volunteer
