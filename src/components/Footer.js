@@ -14,7 +14,7 @@ export default function Footer() {
           <h1>Address</h1>
           <span>
             <div className={footerStyles.SubsectionTitle}>The Agoge Project Gym</div>
-            3203 Belair Rd <br/>Baltimore, MD 21213
+            3203 Belair Rd <br/>Second Floor<br/>Baltimore, MD 21213
           </span>
           
         </div>
@@ -23,7 +23,7 @@ export default function Footer() {
           <span className={footerStyles.Subsection}>
             <div className={footerStyles.SubsectionTitle}>The Agoge Project Gym</div>
             443-760-5437
-            <br/><a href="mailto:info@theagogeproject.org">info@theagogeproject.org</a>
+            <br/><a href="mailto:agogeproject@gmail.com">agogeproject@gmail.com </a>
           </span>
         </div>
         <div className={footerStyles.Section}>

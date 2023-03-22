@@ -123,7 +123,7 @@ export default class Contact extends React.Component {
           }
         )
       }, (error) => {
-        alert(`The following error occured: ${error.text}. Please try again or email us directly at info@agogeproject.org`)
+        alert(`The following error occured: ${error.text}. Please try again or email us directly at agogeproject@gmail.com`)
         console.log(error.text);
       })
   }

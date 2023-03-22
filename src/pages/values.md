@@ -1,6 +1,6 @@
 ---
 slug: 'values'
-date: '2020-07-16'
+date: '2023-02-21'
 title: 'Our Values'
 author: 'Michael John'
 doctype: 'article'
