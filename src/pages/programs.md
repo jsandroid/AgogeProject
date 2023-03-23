@@ -13,6 +13,8 @@ Our youth participants are provided with 5, 1.5 hour long boxing sessions per we
 ### Brazilian Jiu Jitsu 
 Our Youth participants are provided with 6 1.5 hour long jiu jitsu sessions per week. The sessions are facilitated by Dennis Kelley who is a very experienced and knowledgeable purple belt under Mark Gornoll and Dylan Dear Born of Infinite Jiu Jitsu. We are also very fortunate to have another very seasoned grappler Aaron Marhcanti who brings a lot of experience and knowledge to our youth on the mats. 
 
+Learn the fundamentals of Jiu Jitsu with an accredited team of instructors under the infinity Jiu Jitsu Affiliation. Jiu Jitsu is a self defense martial art that focuses on the ability to control a person in a ground fighting scenario. With that control culminating in the ability to apply submission holds. 
+
 ### Academic Support
 There are 5 academic support opportunities for our youth throughout the week. There is a certified teacher on staff during our first hour of programming 5 days a week. Our youth are able to sit to complete their homework in the comfort of knowing that someone is there to support them without any challenges that arise. This helps us as we communicate directly with their teachers at school to develop a plan of support that a student may need to address foundational skill deficits that they are experiencing. 
 
